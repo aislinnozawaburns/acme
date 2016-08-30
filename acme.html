@@ -1,14 +1,20 @@
 <header>
   <title> ACME Corp </title>
   <img src="images/acme-corp.jpg" align="left" width="250" height"205">
-  <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a>
-  <button> Sign Up </button>
+  <nav>
+    <ul>
+      <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
+      <li> <button> Sign Up </button> </li>
+    </ul>
+  </nav>
 </header>
 
 <main>
+  <div>
   <h1> Welcome to ACME CORP! </h1>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
   <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+</div>
 </main>
 
 <footer>
@@ -18,35 +24,55 @@
 
 
 <style>
+  ul li{
+    display:inline;
+    }
   header img {
-    padding: 10px 650px 0px 20px;
+    padding: 10px 600px 10 20px;
   }
   header {
     background-color:rgb(196,196,196);
     font-family:"Lucida Grande";
+    font-size: 20px;
     z-index: 10;
+    border-bottom:solid;
+    border-top:solid;
+    border-color:rgb(130,130,130);
+    border-width: 2px;
   }
-  header a:link {
+  ul {
+    margin: 0 auto;
+    padding: 20px 40px 20px 100px;
+  }
+  li {
+    padding: 20px 30px 20px 0px;
+  }
+  li a:link {
     color:white;
     font-size:20px;
     text-decoration:none;
     text-shadow: 0px 2px 0px rgba(19, 18, 20, 0.67);
-
   }
-  header a:visited {
+  li a:visited {
     color:white;
   }
-  header button {
+  li button {
     color:white;
     background-color:rgb(40,79,172);
     border-radius:8px;
-    margin:25px;
     font-family:"Lucida Grande";
-    font-size:20px;
+    font-size: 20px;
+    margin:0 auto;
     padding:10px 20px 10px 20px;
-    border-top: 1px;
-    border-left: 1px;
-    border-width: 1px;
+  }
+
+
+  div {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    font-family:"Lucida Grande"
   }
 
 </style>
