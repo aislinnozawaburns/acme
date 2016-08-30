@@ -9,17 +9,18 @@
   </nav>
 </header>
 
-<main>
+<body>
   <div>
-  <h1> Welcome to ACME CORP! </h1>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-  <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-</div>
-</main>
+    <h1> Welcome to ACME CORP! </h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  </div>
+</body>
 
 <footer>
   Copyright, 2015
 </footer>
+
 
 
 
@@ -28,16 +29,19 @@
     display:inline;
     }
   header img {
-    padding: 10px 600px 10 20px;
+    padding: 10px 700px 10 20px;
   }
   header {
     background-color:rgb(196,196,196);
+    background-position: absolute;
+    max-width: 100%;
+    margin-top: -8px;
     font-family:"Lucida Grande";
     font-size: 20px;
     z-index: 10;
     border-bottom:solid;
     border-top:solid;
-    border-color:rgb(130,130,130);
+    border-color:gray;
     border-width: 2px;
   }
   ul {
@@ -66,13 +70,25 @@
     padding:10px 20px 10px 20px;
   }
 
+  body {
+    background: url (images/background.png);
+    background-size: cover;
+  }
 
   div {
-    height: 300px;
-    width: 80%;
-    margin: 0 auto;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 10px 20px;
+    margin: 20px auto 20px auto;
     background-color: white;
-    font-family:"Lucida Grande"
+  }
+
+  footer {
+    position: relative;
+    border-top: solid;
+    padding: 40px auto 40px auto;
+    text-align: center;
   }
 
 </style>
