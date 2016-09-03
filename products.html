@@ -10,8 +10,8 @@
     <header>
       <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="250px" height"90px">
       <nav>
-        <ul>
-          <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
+        <ul class="one">
+          <li> <a class="one" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
           <li> <button> Sign Up </button> </li>
         </ul>
       </nav>
@@ -21,7 +21,35 @@
         <main>
             <h1> Products </h1>
             <p> For a complete list of products, please visit the The Original Illustrated Catalog of ACME Products. </p>
-            <a href=""
+            <div class="row-one">
+              <section>
+                <img src="images/blasting.jpg" alt="Blasting Powder">
+                <p> Due to its highly volatile and explosive nature, do not ignite ACME Blasting Powder until you are in a safe location. </p>
+                <ul class="two">
+                  <li> <button> Add to Cart </button> </li>
+                  <li> <a class="two" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
+                </ul>
+              </section>
+            </div>
+            <div class="row-two">
+              <section>
+                <img src="images/hair.jpg" alt="Hair">
+                <p> See the before and after pictures below for an example of how ACME Hair Grower (patented) is guaranteed make short hair long in a flash. </p>
+                <ul>
+                  <li> <button> Add to Cart </button> </li>
+                  <li> <a class="two" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
+              </section>
+            </div>
+            <div class="row-three">
+              <section>
+                <img src="images/jetuni.jpg" alt="Jet-Propelled Unicycle">
+                <p> Another item in the Acme Jet Propelled Line of products is the Acme Jet Propelled Unicycle, which even the most unbalanced individual can ride with ease. </p>
+                <ul>
+                  <li> <button> Add to Cart </button> </li>
+                  <li> <a class="two" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
+                </ul>
+              </section>
+            </div>
         </main>
 
         <footer>
@@ -33,6 +61,10 @@
     </html>
 
     <style>
+
+    * {
+      box-sizing: border-box;
+    }
 
     header {
         height: 90px;
@@ -50,10 +82,14 @@
         padding: 10px 30px 20px 10px;
     }
 
-    ul {
+    ul.one {
         margin: 0 auto;
         padding: 20px 40px 20px 100px;
         float: right;
+    }
+
+    ul.two {
+      text-align: left;
     }
 
 
@@ -62,15 +98,20 @@
         display:inline;
     }
 
-    li a:link {
+    li a.one:link {
         color:white;
         font-size:22px;
         text-decoration:none;
         text-shadow: 0px 2px 0px rgba(19, 18, 20, 0.67);
     }
 
-    li a:visited {
+    li a.one:visited {
         color:white;
+    }
+
+    a.two {
+      color: #2A4CB2;
+      text-decoration: none;
     }
 
     button {
@@ -98,6 +139,41 @@
         border-radius: 10px;
         box-shadow: 0 0 10px gray;
     }
+
+    .row-one {
+      display: flex;
+    }
+
+    .row-two {
+      display: flex;
+      border-bottom: 1px solid rgba(150, 150, 150, 0.6);
+      border-top: 1px solid rgba(150, 150, 150, 0.6);
+      padding-top: 20px;
+    }
+
+    .row-three {
+      display: flex;
+      padding-top: 20px;
+    }
+
+    section {
+      flex: 1;
+      width: 30%;
+    }
+
+    section img {
+      float: left;
+      width: 230px;
+      border: 1px solid rgba(150, 150, 150, 0.6);
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom:20px;
+      margin-right: 20px;
+      background-color: rgba(150, 150, 150, 0.2);
+    }
+
+
+
 
 
     footer {
