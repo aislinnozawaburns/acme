@@ -8,11 +8,11 @@
 
   <body>
     <header>
-      <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="250px" height"90px">
+      <a href="index.html"> <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="300px" height"100px"> </a>
       <nav>
-        <ul>
-          <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
-          <li> <button> Sign Up </button> </li>
+        <ul class="header-li">
+          <li> <a href="products.html"> Products </a> </li>
+          <li> <button> <a href="signup.html"> Sign Up </a> </button> </li>
         </ul>
       </nav>
     </header>
@@ -35,8 +35,12 @@
 
 <style>
 
+* {
+  box-sizing: border-box;
+}
+
 header {
-    height: 90px;
+    height: 100px;
     background-color:rgb(196,196,196);
     max-width: 100%;
     padding: 5px;

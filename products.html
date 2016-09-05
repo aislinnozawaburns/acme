@@ -8,11 +8,11 @@
 
   <body>
     <header>
-      <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="250px" height"90px">
+      <a href="index.html"> <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="300px" height"100px"> </a>     
       <nav>
-        <ul class="one">
-          <li> <a class="one" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
-          <li> <button> Sign Up </button> </li>
+        <ul class="header-li">
+          <li> <a href="products.html"> Products </a> </li>
+          <li> <button> <a href="signup.html"> Sign Up </a> </button> </li>
         </ul>
       </nav>
     </header>
@@ -25,9 +25,9 @@
               <section>
                 <img src="images/blasting.jpg" alt="Blasting Powder">
                 <p> Due to its highly volatile and explosive nature, do not ignite ACME Blasting Powder until you are in a safe location. </p>
-                <ul class="two">
+                <ul class="shop">
                   <li> <button> Add to Cart </button> </li>
-                  <li> <a class="two" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
+                  <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
                 </ul>
               </section>
             </div>
@@ -35,18 +35,18 @@
               <section>
                 <img src="images/hair.jpg" alt="Hair">
                 <p> See the before and after pictures below for an example of how ACME Hair Grower (patented) is guaranteed make short hair long in a flash. </p>
-                <ul>
+                <ul class="shop">
                   <li> <button> Add to Cart </button> </li>
-                  <li> <a class="two" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
+                  <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
               </section>
             </div>
             <div class="row-three">
               <section>
                 <img src="images/jetuni.jpg" alt="Jet-Propelled Unicycle">
                 <p> Another item in the Acme Jet Propelled Line of products is the Acme Jet Propelled Unicycle, which even the most unbalanced individual can ride with ease. </p>
-                <ul>
+                <ul class="shop">
                   <li> <button> Add to Cart </button> </li>
-                  <li> <a class="two" href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
+                  <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Details </a> </li>
                 </ul>
               </section>
             </div>
@@ -67,7 +67,7 @@
     }
 
     header {
-        height: 90px;
+        height: 100px;
         background-color:rgb(196,196,196);
         max-width: 100%;
         padding: 5px;
@@ -82,14 +82,10 @@
         padding: 10px 30px 20px 10px;
     }
 
-    ul.one {
+    .header-li {
         margin: 0 auto;
         padding: 20px 40px 20px 100px;
         float: right;
-    }
-
-    ul.two {
-      text-align: left;
     }
 
 
@@ -98,20 +94,31 @@
         display:inline;
     }
 
-    li a.one:link {
+    .header-li a:link {
         color:white;
         font-size:22px;
         text-decoration:none;
         text-shadow: 0px 2px 0px rgba(19, 18, 20, 0.67);
     }
 
-    li a.one:visited {
+    .header-li a:visited {
         color:white;
     }
 
-    a.two {
-      color: #2A4CB2;
-      text-decoration: none;
+    .shop a:link {
+      color:rgb(40,79,172);
+      font-size:18px;
+      text-decoration:none;
+    }
+
+    .shop a:visited {
+      color:rgb(40,79,172);
+      font-size:18px;
+      text-decoration:none;
+    }
+
+    .shop {
+      margin-left: 0;
     }
 
     button {
@@ -124,6 +131,7 @@
         padding:10px 20px 10px 20px;
     }
 
+
     body {
         background: url("images/background.png");
         background-size: cover;
@@ -132,7 +140,7 @@
     }
 
     main {
-        padding: 20px 30px 40px 30px;
+        padding: 20px 30px 40px 40px;
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: white;
