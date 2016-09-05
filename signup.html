@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title> ACME Corp </title>
-  </head>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title> ACME Corp </title>
+      </head>
 
 
-  <body>
-    <header>
-      <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="250px" height"90px">
-      <nav>
-        <ul>
-          <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
-          <li> <button> Sign Up </button> </li>
-        </ul>
-      </nav>
-    </header>
+      <body>
+        <header>
+          <img src="images/acme-corp.jpg" alt="Acme Logo" align="left" width="250px" height"90px">
+          <nav>
+            <ul>
+              <li> <a href="http://looneytunes.wikia.com/wiki/List_of_ACME_Products"> Products </a> </li>
+              <li> <button> Sign Up </button> </li>
+            </ul>
+          </nav>
+        </header>
 
     <div class="one">
         <main>
-            <h1> Sign Up </h1>
+          <h1> Sign Up </h1>
+            <div class="form">
+            <div class="text-input">
+            <div class="first">
+              <label class="title"> First Name </label>
+              <input type="text" placeholder="John">
+            </div>
+            <div class="second">
+              <label class="title"> Last Name </label>
+              <input type="text" placeholder="Doe">
+            </div>
+            <div class="third">
+              <label class="title"> Email </label>
+              <input type="text" placeholder="john.doe@example.com">
+            </div>
+            <div class="fourth">
+              <label class="title"> Password </label>
+              <input type="text">
+            </div>
+            </div>
+            <div class="fifth">
+              <label> How did you hear about us? </label>
+              <select>
+                <option> Blank </option>
+                <option> Friend </option>
+                <option> Search </option>
+                <option> Other </option>
+              </select>
+            </div>
+            <div class="sixth">
+              <input type="checkbox">
+              <label> Agree to our terms of service </label>
+            </div>
+            <div class="sign-up">
+              <button> Sign Up </button>
+            </div>
+          </div>
         </main>
 
         <footer>
@@ -29,6 +65,7 @@
 
       </body>
     </html>
+
 
     <style>
 
@@ -89,13 +126,45 @@
     }
 
     main {
-        padding: 20px 30px 40px 30px;
+        padding: 20px 30px 40px 40px;
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 0 10px gray;
     }
+
+    .form {
+      font-size: 18px;
+    }
+
+    .form div {
+      margin-bottom: 20px;
+    }
+
+    .title {
+      float: left;
+      width: 180px;
+    }
+
+    select {
+      display: block;
+      width: 80px;
+      margin-top: 5px;
+    }
+
+    .text-input input {
+      border-radius: 5px;
+      border: 2px solid lightgray;
+      padding: 4px;
+      font-size: 12px;
+      width: 150px;
+    }
+
+    input:focus {
+      border-color: #2A4CB2;
+    }
+
 
 
     footer {
